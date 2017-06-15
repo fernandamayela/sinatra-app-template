@@ -2,10 +2,17 @@
     background-color: black;
 }
 
-input {
-    left: -9999px;
+
+.circle_pic {
+    border-radius: 50%;
+    height: 100px;
+}
+
+input[type=radio] {
+    display: none;
+    /*left: -9999px;*/
     /*visibility: hidden;*/
-    position: absolute;
+    /*position: absolute;*/
 }
 
 input[type=radio]: checked + label > img{
