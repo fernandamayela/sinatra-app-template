@@ -1,0 +1,17 @@
+#mainNav {
+    background-color: black;
+}
+
+input {
+    left: -9999px;
+    /*visibility: hidden;*/
+    position: absolute;
+}
+
+input[type=radio]: checked + label > img{
+    border: 5px dashed red ;
+}
+
+label > input + img{
+    cursor: pointer;
+}

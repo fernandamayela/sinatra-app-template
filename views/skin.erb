@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Kat + Fern-SKIN QUIZ</title>
+  </head>
+  <link href="css/style.css" rel="stylesheet">
+     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -14,8 +16,6 @@
 
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
-    <title>Product Suggestions</title>
-  </head>
   <body id="page-top" class="index">
    <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -35,16 +35,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Quizzes</a>
+                        <a class="page-scroll" href="/">Quizzes</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Our Favorite Products</a>
+                        <a class="page-scroll" href="/">Our Favorite Products</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="/">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="/">Team</a>
                     </li>
                     <!--<li>-->
                     <!--    <a class="page-scroll" href="#contact">Contact</a>-->
@@ -55,20 +55,32 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-     <section id="services">
+        <section id="services">
         <div class="container">
             <div class="row">
-                <h1><%=@skin_product_name%></h1>
-                <img src="<%=@skin_product_image%>">
-                <h3><%=@skin_product_description%></h3>
-                
-                <h1><%=@product_name%></h1>
-                <img src="<%=@product_image%>">
-                <h3><%=@product_description%></h3>
+              <h1>Skincare Quiz</h1>
+              <h2>Click on the photos that best describe your skin and skincare needs</h2>
+              <form method= "POST" action= "/skin_results">
+               <h3>Do you have oily, dry, or combination skin?</h3>
+               <select name="skintype">
+                 <option value="Oily">Oily</option>
+                 <option value="Dry">Dry</option>
+                 <option value="Combination">Combination</option>
+                 <option value="None">None</option>
+               </select>
+               <h3>What is your main skincare goal? Hydration, oil control, or blemish control?</h3>
+                 <select name="skinmoisture">
+                 <option value="Hydration">Hydration</option>
+                 <option value="Oil Control">Oil Control</option>
+                 <option value="Blemish Control">Blemish Control</option>
+                 <option value="None">None</option>
+               </select>
+               <input type="submit">
+               </form>
               </div>
             </div>
           </section>
-                 
+   
+   
   </body>
 </html>

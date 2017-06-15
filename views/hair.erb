@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <title>Kat + Fern-HAIR QUIZ</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -15,9 +16,10 @@
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
     <title>Product Suggestions</title>
+
   </head>
-  <body id="page-top" class="index">
-   <!-- Navigation -->
+  <body  id="page-top" class="index">
+      <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,16 +37,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Quizzes</a>
+                        <a class="page-scroll" href="/">Quizzes</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Our Favorite Products</a>
+                        <a class="page-scroll" href="/">Our Favorite Products</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="/">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="/">Team</a>
                     </li>
                     <!--<li>-->
                     <!--    <a class="page-scroll" href="#contact">Contact</a>-->
@@ -55,20 +57,50 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-     <section id="services">
+    
+    <section id="services">
         <div class="container">
             <div class="row">
-                <h1><%=@skin_product_name%></h1>
-                <img src="<%=@skin_product_image%>">
-                <h3><%=@skin_product_description%></h3>
-                
-                <h1><%=@product_name%></h1>
-                <img src="<%=@product_image%>">
-                <h3><%=@product_description%></h3>
-              </div>
+                <h1>Hair Quiz</h1>
+                  <h2>Click on the photos that best describe your hair and hair needs</h2>
+                  <form method= "POST" action= "/hair_results">
+                   <h3>Is your hair wavy, curly, straight, or coily?</h3>
+                   <select name="type">
+                     <option value="Wavy">Wavy</option>
+                     <option value="Straight">Straight</option>
+                     <option value="Curly">Curly</option>
+                     <option value="Coily">Coily</option>
+                   </select>
+                 <h1>Hair Quiz</h1>
+                  <h2>Click on the photos that best describe your hair and hair needs</h2>
+                 
+                   
+                   
+                   
+                   <h3>Is your hair dry, oily, or normal?</h3>
+                    <select name="moisture">
+                     <option value="Dry">Dry</option>
+                     <option value="Oily">Oily</option>
+                     <option value="Normal">Normal</option>
+                     <option value="None">None</option>
+                     </select>
+                   <input type="submit">
+                </div>
             </div>
           </section>
                  
+       </form>
+       
+        <!--<form method= "POST" action= "/hair_results">-->
+        <!--           <h3>Is your hair wavy, curly, straight, or coily?</h3>-->
+        <!--             <label>-->
+        <!--                 <img src="https://s-media-cache-ak0.pinimg.com/736x/a4/8b/aa/a48baabbe76ab4cc0e7da63f705b0d58.jpg">-->
+        <!--                 <input type= "radio" name= "hair" value="Wavy">-->
+        <!--            </label> <br>    -->
+        <!--             <input type= "radio" name= "hair" value="Straight">Straight<br>-->
+        <!--             <input type= "radio" name= "hair" value="Curly">Curly<br>-->
+        <!--             <input type= "radio" name = "hair"value="Coily">Coily<br>-->
+        <!--             <input type="submit">-->
+        <!--</form>-->
   </body>
 </html>
