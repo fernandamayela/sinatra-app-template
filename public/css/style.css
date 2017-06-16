@@ -15,10 +15,60 @@ input[type=radio] {
     /*position: absolute;*/
 }
 
-input[type=radio]: checked + label > img{
+input[type=radio]:checked + label > img{
     border: 5px dashed red ;
 }
 
 label > input + img{
     cursor: pointer;
 }
+
+
+label:hover{
+    border: 5px double #124496 ;
+    /*border-style: soild;*/
+    border-radius: 50%;
+}
+
+label:active{
+     border: 5px double #124496 ;
+    /*border-style: soild;*/
+    border-radius: 50%;
+}
+
+.buttons:checked {
+    border;
+}
+
+
+/*label:target {*/
+/*    border: 3px dotted #e58798;*/
+/*}*/
+
+
+.product_img {
+    height: 300px;
+}
+h1 {
+    text-align: center;
+    /*margin-top: -15%;*/
+}
+
+h2 {
+    text-align: center;
+    font-family: "Kaushan Script";
+}
+
+h3 {
+    text-align: center;
+}
+
+
+.buttons {
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+}
+

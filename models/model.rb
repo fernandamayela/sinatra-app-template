@@ -29,37 +29,37 @@ def hair_products(hair_type, hair_moisture)
 end
 
 def skin_products(skin_input, skin_output)
-    if skin_input.capitalize == "Oily" && skin_output.capitalize == "Hyrdation"
+    if skin_input.capitalize == "Oily" && skin_output.capitalize == "Hydration"
         return ["Triple Berry Smoothing Peel", "http://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2017/02/020117-renee-rouleau-embed.jpg?itok=3vYdaMuB", "This contains a powerful blend of antioxidant-rich berries with five skin smoothing fruit AHAs, BHAs and enzymes to clear blemishes and clogged pores, fade post-breakout marks, lift discoloration, stimulate cellular renewal and smooth surface texture while reducing the appearance of fine lines, wrinkles and large pores."]
-    elsif skin_input.capitalize == "Oily" && skin_output.capitalize == "Oil control"
+    elsif skin_input.capitalize == "Oily" && skin_output.capitalize == "Oilcontrol"
         return ["Laura Mercier's Oil-Free Foundation Primer", "http://s7d5.scene7.com/is/image/lauramercier/LM_S15_FP_OF?resMode=sharp2&op_usm=1,1,6,0&iccEmbed=0&printRes=72", "Ideal for oily, sensitive, and acne-prone skin types, it helps mattify and control oil. It’s the first step to Laura’s “Flawless Face.” This dermatologist-tested, non-comedogenic product contains the antioxidant green tea extract; vitamins A, C, and E; and cucumber that helps sooth and refresh the skin. "]
-    elsif skin_input.capitalize == "Oily" && skin_output.capitalize == "Blemish Control"
+    elsif skin_input.capitalize == "Oily" && skin_output.capitalize == "Blemishcontrol"
         return ["Tripe Berry Smoothing Peel", "http://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2017/02/020117-renee-rouleau-embed.jpg?itok=3vYdaMuB", "This contains a powerful blend of antioxidant-rich berries with five skin smoothing fruit AHAs, BHAs and enzymes to clear blemishes and clogged pores, fade post-breakout marks, lift discoloration, stimulate cellular renewal and smooth surface texture while reducing the appearance of fine lines, wrinkles and large pores."]
     elsif skin_input.capitalize == "Oily" && skin_output.capitalize == "None"
         return ["Neutrogena Oil-Free Acne Wash Pink Grapefruit Facial Cleanser", "http://www.neutrogena.com/images/products_store/en_us/product_images/6805365_320x385.jpg", "This oil-free formula gently cleanses deep down into pores for clear skin. It contains Salicylic Acid to get rid of acne you have now and help prevent future breakouts. Special skin soothers help prevent irritation and overdrying. Skin is left clean, residue-free and never oily. "]
     elsif skin_input.capitalize == "Dry" && skin_output.capitalize == "Hydration"
-        return ["CeraVe Facial Moisturizing Lotion PM", "http://www.neutrogena.com/images/products_store/en_us/product_images/6805365_320x385.jpg", "Facial Moisturizing Lotion by CeraVe provides patented controlled release of ingredients to help repair and restore your skin's natural protective barrier. Non-comedogenic, non-irritating. With ceramides, niacinamide, and hyaluronic acid."]
-    elsif skin_input.capitalize == "Dry" && skin_output.capitalize == "Oil Control"
+        return ["CeraVe Facial Moisturizing Lotion PM", "http://images.ulta.com/is/image/Ulta/2254422?$detail$", "Facial Moisturizing Lotion by CeraVe provides patented controlled release of ingredients to help repair and restore your skin's natural protective barrier. Non-comedogenic, non-irritating. With ceramides, niacinamide, and hyaluronic acid."]
+    elsif skin_input.capitalize == "Dry" && skin_output.capitalize == "Oilcontrol"
         return ["DermaControl Oil Control Moisturizer SPF 30", "http://images.ulta.com/is/image/Ulta/2254341?$detail$", " Cetaphil DermaControl Oil Control Moisturizer SPF 30 is clinically proven to manage oily and acne-prone skin. It soothes sensitivities like redness or dryness caused by using some acne treatments and controls shine while protecting and moisturizing skin. "]
-    elsif skin_input.capitalize == "Dry" && skin_output.capitalize == "Blemish Control"
+    elsif skin_input.capitalize == "Dry" && skin_output.capitalize == "Blemishcontrol"
         return ["PCA SKIN Clearskin Facial cream", "https://www.beautance.com/1742-home_default/pca-skin-clearskin-facial-cream-17-oz.jpg", "A skin purifying cleansing bar for oily skin or those with acne."]
     elsif skin_input.capitalize == "Dry" && skin_output.capitalize == "None"
         return ["Cetaphil Gentle Skin Cleanser","https://smedia.webcollage.net/rwvfp/wc/cp/18629163/module/cpwalmart/_cp/products/1440796438124/tab-a2ce3c87-75d4-43f4-96f2-8d13d385aa65/74802f31-e58f-4f19-9e9f-e57303fc6255.jpg.w480.jpg", "Cetaphil Gentle Skin Cleanser is a mild, non-irritating formulation that soothes skin as it cleans. In fact, it's gentle enough for a baby's delicate skin. Designed specifically to work for all skin types, it is a simple, yet highly effective way to care for your skin."]   
     elsif skin_input.capitalize == "Combination" && skin_output.capitalize == "Hydration"
         return ["CeraVe Facial Moisturizing Lotion PM", "http://images.ulta.com/is/image/Ulta/2254422?$detail$", "Facial Moisturizing Lotion by CeraVe provides patented controlled release of ingredients to help repair and restore your skin's natural protective barrier. Non-comedogenic, non-irritating. With ceramides, niacinamide, and hyaluronic acid."]
-    elsif skin_input.capitalize == "Combination" && skin_output.capitalize == "Oil Control"
+    elsif skin_input.capitalize == "Combination" && skin_output.capitalize == "Oilcontrol"
         return ["The Body Shop Seaweed Oil Control Day Cream", "https://www.thebodyshop.com/medias/en-gb-seaweed-oil-control-gel-cream-2-640x640.jpg?context=product-images/h0e/hd8/9186972041246/en-gb-seaweed-oil-control-gel-cream_2-640x640.jpg", "Hydrating yet lightweight, this cream helps to balance oil and excess sebum, leaving a matte, shine-free complexion."]
-    elsif skin_input.capitalize == "Combination" && skin_output.capitalize == "Blemish Control"
+    elsif skin_input.capitalize == "Combination" && skin_output.capitalize == "Blemishcontrol"
         return ["Blemish Control Bar - PCA Skin", "https://s4.thcdn.com/productimg/600/600/11291548-5654444651936467.jpg", "A skin purifying cleansing bar for oily skin or those with acne."]
     elsif skin_input.capitalize == "Combination" && skin_output.capitalize == "None"
         return ["Chanel Gel Pureté", "https://www.chanel.com/en_US/fragrance-beauty/cms2export/Site1Files/P143880/S143880_XLARGE.jpg", ""]
-    elsif skin_input.capitalize == "None of the above" && skin_output.capitalize == "Hydration"
+    elsif skin_input.capitalize == "None" && skin_output.capitalize == "Hydration"
         return ["M.A.C. Face and Body Foundation", "https://img.makeupalley.com/1/1/8/1/3002194.JPG", "A comfortable, lightweight fluid foundation with a unique blend of emollients that delivers low-to-medium buildable coverage and a natural satin finish."]
-    elsif skin_input.capitalize == "None of the above" && skin_output.capitalize == "Oil Control"
+    elsif skin_input.capitalize == "None" && skin_output.capitalize == "Oilcontrol"
         return ["Exposed - Facial Cleanser", "http://www.exposedskincare.com/mas_assets/esc/images/facial-cleanser.jpg", "This revolutionary acne treatment cleanser will rid the skin of bacteria, remove the oil and dirt from your face, and penetrate your pores to kill acne causing bacteria. Unlike many other acne treatment cleansers, the Exposed Facial Cleanser does not contain any harsh detergents such as lauryl and laureth sulfates, which can cause redness, irritation, and inflammation"]
-    elsif skin_input.capitalize == "None of the above" && skin_output.capitalize == "Blemish Control"
+    elsif skin_input.capitalize == "None" && skin_output.capitalize == "Blemishcontrol"
         return ["St. Ives Blemish Control Apricot Scrub","https://pics.drugstore.com/prodimg/347880/450.jpg", "A delicious scrub that smells of fuzzy apricots & helps reduce breakouts before they even occur. Made with 100% natural exfoliants (like crushed walnut shell powder) for a gentle, deep cleanse."]
-    elsif skin_input.capitalize == "None of the above" && skin_output.capitalize == "None"
+    elsif skin_input.capitalize == "None" && skin_output.capitalize == "None"
         return ["Fresh - Soy Face Cleanser", "http://www.sephora.com/productimages/sku/s487694-main-zoom.jpg", "The face cleanser tones, soothes, and softens the skin for a radiant, healthy-looking complexion. Amino acid-rich soy proteins help support natural elasticity and healthy skin, while rosewater is notable for its calming and balancing properties. The cleanser is further enriched with calming cucumber extract to soothe the skin and borage seed oil to nourish. Soy Face Cleanser is extra gentle and can be used daily, morning and night—even around the eye area."] 
 
     else
